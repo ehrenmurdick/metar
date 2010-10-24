@@ -6,6 +6,7 @@ require 'sinatra'
 
 
 get "/:airport" do
+  break unless params[:airport] != ""
   addy = "http://aviationweather.gov/adds/metars/"
   mech = ::Mechanize.new { |agent| agent.user_agent_alias = 'Mac Safari' }
   result = nil
