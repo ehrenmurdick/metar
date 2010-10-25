@@ -1,2 +1,3 @@
-mechanize --version '1.0.0'
-sinatra   --version '1.0'
+mechanize   --version '1.0.0'
+sinatra     --version '1.0'
+memcached   --version '1'
