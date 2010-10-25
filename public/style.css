@@ -2,11 +2,15 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
+h1 {
+  color: #A00;
+}
+
 body {
   background: #340505;
 }
 
-input, label {
+input, label, h1 {
   display: block;
   margin: 10px 40px;
 }
