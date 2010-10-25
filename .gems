@@ -1,3 +1,4 @@
 mechanize   --version '1.0.0'
 sinatra     --version '1.0'
 memcached   --version '1'
+haml        --version '3.0.16'

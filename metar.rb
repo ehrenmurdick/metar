@@ -3,14 +3,19 @@ require 'sinatra'
 
 configure do
   require 'mechanize'
-  require 'memcached'
 
+  require 'memcached'
   CACHE = Memcached.new
+
+  require 'haml'
 end
 
+get '/' do
+  haml :form
+end
 
-get "/:airport" do
-  break unless params[:airport] != ""
+get "/metar" do
+  redirect '/' unless params[:airport] != ""
 
   content_type "text/plain"
 
